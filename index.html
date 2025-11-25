@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-<SEU_ID_AQUI>"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-<SEU_ID_AQUI>');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Pessoal - Apresentação e Projetos</title>
+    <!-- Carregamento do Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4f46e5', // Indigo 600
+                        'secondary': '#1f2937', // Gray 800
+                        'background': '#0f172a', // Slate 900
+                        'text-light': '#f8fafc', // Slate 50
+                        'text-gray': '#9ca3af', // Gray 400
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Configuração de estilo para rolagem suave -->
+    <style>
+        /* Define a fonte Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="bg-background text-text-light font-sans">
+
+    <!-- 1. Cabeçalho Fixo (Navegação) -->
+    <header class="sticky top-0 z-50 bg-background/95 backdrop-blur-sm shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo/Nome -->
+            <a href="#inicio" class="text-xl font-bold text-primary hover:text-indigo-400 transition">
+                &lt;SeuNome/&gt;
+            </a>
+            
+            <!-- Menu de Navegação -->
+            <div class="space-x-4 md:space-x-8 text-sm font-medium">
+                <a href="#sobre" class="text-text-light hover:text-primary transition duration-300">Sobre</a>
+                <a href="#projetos" class="text-text-light hover:text-primary transition duration-300">Projetos</a>
+                <a href="#tecnologias" class="text-text-light hover:text-primary transition duration-300">Tecnologias</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2. Seção Hero (Início) -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center text-center px-4 py-20">
+        <div class="max-w-4xl">
+            <p class="text-lg text-primary mb-4 animate-pulse">Olá, Bem-vindo(a) ao meu portfólio!</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                Eu sou um(a) <span class="text-primary">Desenvolvedor(a) Web</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-text-gray mb-10">
+                Apaixonado(a) por transformar ideias complexas em soluções digitais elegantes e funcionais.
+            </p>
+            <a href="#projetos" class="inline-block bg-primary text-text-light font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-500 transition duration-300 transform hover:scale-105">
+                Ver Meus Projetos
+            </a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 pb-20">
+
+        <!-- 3. Seção Sobre -->
+        <section id="sobre" class="py-20 border-t border-secondary">
+            <h2 class="text-4xl font-bold text-center mb-12">Sobre Mim</h2>
+            <div class="max-w-3xl mx-auto text-lg space-y-6 text-text-gray">
+                <p>
+                    Com [X anos, ou "alguns anos"] de experiência em desenvolvimento de software, meu foco principal é a criação de aplicações robustas e escaláveis, priorizando sempre a experiência do usuário e a clareza do código.
+                </p>
+                <p>
+                    Minha jornada começou com o desejo de construir coisas que resolvessem problemas reais. Desde então, tenho me aprofundado em [Mencione sua área de especialidade, ex: Frontend, Backend, Full Stack] e busco continuamente novas tecnologias e métodos para aprimorar meu trabalho.
+                </p>
+                <p>
+                    Adoro aprender e colaborar! Se você tem um projeto desafiador ou quer apenas conversar sobre tecnologia, sinta-se à vontade para entrar em contato.
+                </p>
+                
+                <!-- Exemplo de estatísticas/cards (opcional) -->
+                <div class="grid grid-cols-2 gap-4 pt-6 text-center">
+                    <div class="bg-secondary p-6 rounded-lg shadow-xl border border-indigo-700/50">
+                        <p class="text-3xl font-bold text-primary">10+</p>
+                        <p class="text-sm text-text-gray">Projetos Concluídos</p>
+                    </div>
+                    <div class="bg-secondary p-6 rounded-lg shadow-xl border border-indigo-700/50">
+                        <p class="text-3xl font-bold text-primary">2+</p>
+                        <p class="text-sm text-text-gray">Anos de Experiência</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Seção Projetos -->
+        <section id="projetos" class="py-20 border-t border-secondary">
+            <h2 class="text-4xl font-bold text-center mb-12">Meus Projetos Recentes</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Cartão de Projeto 1 -->
+                <div class="bg-secondary p-6 rounded-xl shadow-2xl hover:shadow-primary/30 transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-primary mb-3">Gerenciador de Tarefas</h3>
+                    <p class="text-text-gray mb-4">
+                        Uma aplicação completa de lista de tarefas (To-Do List) construída com React e utilizando Firebase para persistência de dados em tempo real.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs mb-4">
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">React</span>
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">Firebase</span>
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">Tailwind CSS</span>
+                    </div>
+                    <a href="#" class="text-primary hover:text-indigo-400 font-medium flex items-center">
+                        Ver Projeto
+                        <!-- Ícone SVG de seta -->
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Cartão de Projeto 2 -->
+                <div class="bg-secondary p-6 rounded-xl shadow-2xl hover:shadow-primary/30 transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-primary mb-3">API de Receitas</h3>
+                    <p class="text-text-gray mb-4">
+                        Um backend RESTful desenvolvido em Node.js e Express para servir dados de receitas. Utiliza MongoDB como banco de dados.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs mb-4">
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">Express</span>
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">MongoDB</span>
+                    </div>
+                    <a href="#" class="text-primary hover:text-indigo-400 font-medium flex items-center">
+                        Ver Código
+                        <!-- Ícone SVG de seta -->
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Cartão de Projeto 3 -->
+                <div class="bg-secondary p-6 rounded-xl shadow-2xl hover:shadow-primary/30 transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-primary mb-3">Clone de Landing Page</h3>
+                    <p class="text-text-gray mb-4">
+                        Recriação de uma landing page moderna focada em design responsivo e otimização de performance, utilizando HTML e CSS puro (ou um framework).
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs mb-4">
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">HTML5</span>
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">CSS3</span>
+                        <span class="bg-indigo-700/50 text-text-light px-3 py-1 rounded-full">Responsividade</span>
+                    </div>
+                    <a href="#" class="text-primary hover:text-indigo-400 font-medium flex items-center">
+                        Ver Demonstração
+                        <!-- Ícone SVG de seta -->
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- 5. Seção Tecnologias -->
+        <section id="tecnologias" class="py-20 border-t border-secondary">
+            <h2 class="text-4xl font-bold text-center mb-12">Minhas Ferramentas Favoritas</h2>
+
+            <p class="text-center max-w-2xl mx-auto text-text-gray mb-10">
+                Gosto de trabalhar com um stack moderno e eficiente. Aqui estão algumas das tecnologias com as quais tenho mais afinidade:
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                
+                <!-- Item de Tecnologia -->
+                <div class="p-4 bg-secondary rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-2 text-yellow-500">
+                        <!-- Emoji ou Icone (ex: JavaScript) -->
+                        &#x1F4BB;
+                    </div>
+                    <p class="font-semibold text-text-light">JavaScript/TypeScript</p>
+                </div>
+
+                <!-- Item de Tecnologia -->
+                <div class="p-4 bg-secondary rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-2 text-cyan-500">
+                        <!-- Emoji ou Icone (ex: React) -->
+                        &#x269B;
+                    </div>
+                    <p class="font-semibold text-text-light">React / Angular</p>
+                </div>
+
+                <!-- Item de Tecnologia -->
+                <div class="p-4 bg-secondary rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-2 text-green-500">
+                        <!-- Emoji ou Icone (ex: Node.js) -->
+                        &#x1F4C1;
+                    </div>
+                    <p class="font-semibold text-text-light">Node.js</p>
+                </div>
+
+                <!-- Item de Tecnologia -->
+                <div class="p-4 bg-secondary rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-2 text-blue-500">
+                        <!-- Emoji ou Icone (ex: SQL/MongoDB) -->
+                        &#x1F527;
+                    </div>
+                    <p class="font-semibold text-text-light">SQL / NoSQL (Mongo)</p>
+                </div>
+                
+                <!-- Adicione mais conforme desejar -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-secondary/50 py-8 border-t border-primary/20">
+        <div class="container mx-auto px-4 text-center text-sm text-text-gray">
+            <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+            <p class="mt-2">Desenvolvido com Paixão e Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
